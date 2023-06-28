@@ -1,0 +1,219 @@
+  /* LAYOUT DE PC */
+  .cabeçalho {
+      padding: 0px 23px;
+      background-color: var(--preto);
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+  }
+
+  .container {
+      display: flex;
+      align-items: center;
+  }
+
+  .menu-hamburguer {
+    display: none;
+  }
+   .container__imagem {
+      padding: 13px 5px 13px 2px;
+  }
+
+  .lista-menu__item {
+      display: flex;
+      padding: 13px 5px 13px 40px;
+      gap: 40px;
+
+  }
+
+  .lista-menu__link {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 400;
+  }
+
+
+  .caixa__pesquisa {
+      gap: 16px;
+      width: 170px;
+      height: 38px;
+      font-size: 15px;
+      font-weight: 400;
+      padding: 10px 15px;
+      margin: 20px;
+  }
+
+
+  .botão__pesquisa {
+      padding: 8px 12px;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      border: 1px solid white;
+      background-color: transparent;
+      text-decoration: none;
+      justify-content: space-between;
+  }
+
+  .carrossel {
+      width: 100%;
+  }
+
+
+  /* LAYOUT DE TABLET */
+
+  @media screen and (max-width: 768px) {
+      .cabeçalho {
+          padding: 5px 23px;
+          background-color: var(--preto);
+          width: 100%;
+      }
+
+      .cantainer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+      }
+
+      .container__imagem {
+          margin: 13px 10px 13px 2px;
+
+      }
+
+      .lista-menu__item {
+          display: flex;
+          padding: 13px 5px 13px 40px;
+          gap: 20px;
+
+      }
+
+      .lista-menu__link {
+          /* gap: 20px; */
+          text-decoration: none;
+          color: white;
+          font-size: 13px;
+          font-weight: 400;
+      }
+
+      .container__pesquisa {
+          padding: 0 30px 0 0;
+          display: block;
+
+      }
+
+      .caixa__pesquisa {
+          gap: 16px;
+          width: 145px;
+          height: 38px;
+          font-size: 13px;
+          font-weight: 400;
+          padding: 9px 10px;
+          margin: 10px;
+          align-items: center;
+      }
+
+
+      .botão__pesquisa {
+          width: 67px;
+          height: 38px;
+          padding: 9px 10px;
+          font-size: 13px;
+          font-weight: 500;
+          color: white;
+          border: 1px solid white;
+          background-color: transparent;
+          text-decoration: none;
+      }
+
+      .carrossel-banner-foto {
+          display: none;
+      }
+
+      .menu-hamburguer {
+          display: none;
+      }
+
+  }
+
+  /* LAYOUT DE MOBILE */
+  @media screen and (max-width: 375px) {
+      .cabeçalho {
+          padding: 0.2em;
+          background-color: var(--preto);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+      }
+
+      .container {
+          display: flex;
+          align-items: center;
+
+      }
+
+      .container__imagem {
+          padding: 1em;
+      }
+
+      .lista-menu {
+          display: none;
+          color: black;
+          position: absolute;
+          top: 0%;
+      }
+
+      .lista-menu__item {
+          display: none;
+      }
+
+
+
+      .container__botão:checked~.lista-menu {
+          display: block;
+      }
+
+
+      .menu-hamburguer {
+          display: flex;
+          align-items: center;
+          position: right;
+          justify-content: space-between;
+      }
+
+      .cabeçalho__menu-hamburger {
+          width: 18px;
+          height: 18px;
+          background-image: url("/assets/Icon-menu.svg");
+          display: inline-block;
+          background-repeat: no-repeat;
+          background-position: left;
+      }
+
+      .lista-menu__título-mob {
+          color: var(--verde-meteora);
+          font-size: 16px;
+          font-weight: 700;
+      }
+
+      .lista-menu__link-mob {
+          color: var(--branco);
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 400;
+      }
+
+      .lista-menu__título-mob,
+      .lista-menu__item-mob {
+          padding: 1em;
+          background-color: var(--menu-hamburguer);
+      }
+
+
+
+      .container__pesquisa {
+          display: none;
+      }
+  }

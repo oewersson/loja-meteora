@@ -1,0 +1,26 @@
+@import url(/styles/header.css);
+@import url(/styles/banner.css);
+@import url(/styles/carrossel.css);
+@import url(/styles/tópicos.css);
+@import url(/styles/contato.css);
+@import url(/styles/rodapé.css);
+
+:root {
+    --menu-hamburguer:#343A40 ;
+    --cor-de-fundo: #FFFFFF;
+    --branco: white;
+    --cinza-meteora:#CCCCCC;
+    --verde-meteora: #DAFF01;
+    --roxo-meteora: #9353FF;
+    --coral-meteora: #EE6471;
+    --laranja-meteora: #F87F46;
+    --preto: #000000;
+    --fonte-principal: "Inter";
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
